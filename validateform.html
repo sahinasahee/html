@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title></title>
+    </head>
+        <body>
+             <form name="my form" method="post" onsubmit="return validationform()" action="home">
+               
+                <label>name</label>
+                <input type="text" name="tname">
+                <label>password</label>
+                <input type="password" name="password">
+                <input type="submit"  name="submit">
+             </form>
+        </body>
+            <script>
+               function vadidateform()
+                {
+                  var name=document.myform.tname.value;
+                  var password=document.myform.password.value;
+                    if(name==null||name==" ")
+                    {
+                     alert("enter a valid name");
+                        return false;
+                    }
+                    else if(password.length<8)
+                    {
+                    alert("invalid");
+
+                    }
+                     }
+            </script>
+  </html>
+
